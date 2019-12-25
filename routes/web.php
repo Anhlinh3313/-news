@@ -45,4 +45,11 @@ Route::group(['prefix'=>'admin'],function(){
         Route::get('them','TinTucController@getThem');
 
 	});
+	Route::group(['prefix'=>'user'],function(){
+		// admin/user/them
+        Route::get('danhsach','UserController@getDanhSach');
+        Route::get('sua','UserController@getSua');
+        Route::get('them','UserController@getThem');
+
+	});
 });
