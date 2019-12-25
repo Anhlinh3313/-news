@@ -29,9 +29,9 @@ công dụng
 -Hiển thị phân loại tin, thể loại top tin hot...
 -Dán vào link-youtube, tự động convert trên các trang web lớn.
 -Phát triển thành một Chrome Extension tích hợp hỗ trợ người dùng tải nhanh ở các địa chỉ khác nhau.
+
 #Tác giả:
 - Lê khả lĩnh.
 
 
 
-  
