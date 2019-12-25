@@ -14,15 +14,18 @@ công dụng
 Đầu vào
   - các tin bóng đá trong nước, Tin bóng đá nước ngoài
   - Email, tài khoản, mật khẩu người dùng
+
 Đầu ra
-    - các mục lục menu chọn tin
-    - comment tin thể thao
-#Các bước cài đặt
+   - các mục lục menu chọn tin
+   - comment tin thể thao
+
+# Các bước cài đặt
 -Bước 1: Clone Responsity này về
 -Bước 2: Nếu dùng Xampp, Copy folder vừa clone về cho vào thư mục htdocs của Xampp.
 -Bước 3: Mở thư mục xampp, tìm file xampp-control.exe, run Apache và MySql, đảm bảo hiển thị như hình dưới đây
 -Bước 4: Vào trình duyệt mở localhost/[tên thư mục folder bên trong htdocs]
 -Bước 5: Enter -> Taa.daa
+
 # Nội dung của bài toán
 
 # Hướng phát triển cho bài toán
