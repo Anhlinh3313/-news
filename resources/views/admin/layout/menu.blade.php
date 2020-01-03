@@ -16,25 +16,37 @@
                             <a href="admin/loaitin/danhsach"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="admin/theloai/them/danhsach"><i class="fa fa-bar-chart-o fa-fw"></i> Thể Loại<span class="fa arrow"></span></a>
+                            <a href="admin/theloai/them/danhsach"><i class="fa fa-bar-chart-o fa-fw"></i> Thể Loại Thể Thao<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="admin/theloai/danhsach">Danh Sách</a>
+                                    <a href="admin/theloai/danhsach">Danh Sách Thể Thao</a>
                                 </li>
                                 <li>
-                                    <a href="admin/theloai/them">Thêm Danh Sách</a>
+                                    <a href="admin/theloai/them">Thêm Danh Sách Thể Thao</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-cube fa-fw"></i> Loại Tin<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-cube fa-fw"></i> Loại Tin Thể Thao<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="admin/loaitin/danhsach">Danh Sách Loại Tin</a>
+                                    <a href="admin/loaitin/danhsach">Danh Sách Loại Tin Thể Thao </a>
                                 </li>
                                 <li>
-                                    <a href="admin/loaitin/them">Thêm Loại Tin</a>
+                                    <a href="admin/loaitin/them">Thêm Loại Tin Thể Thao</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                         <li>
+                            <a href="#"><i class="fa fa-cube fa-fw"></i> Tin Tức Thể Thao<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="admin/tintuc/danhsach">Danh Sách Tin Tức Thể Thao </a>
+                                </li>
+                                <li>
+                                    <a href="admin/tintuc/them">Thêm Tin Tức Thể Thao</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

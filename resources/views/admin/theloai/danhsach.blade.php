@@ -6,10 +6,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Thể Loại
+                <h1 class="page-header">Thể Loại Thể Thao
                     <small>Danh Sách</small>
                 </h1>
             </div>
+             @if(session('thongbao'))
+                <div class="alert alert-success">
+                    {{session('thongbao')}}
+                </div>
+            @endif
             <!-- /.col-lg-12 -->
             <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                 <thead>
@@ -27,7 +32,7 @@
                         <td>{{$theloais->id}}</td>
                         <td>{{$theloais->Ten}}</td>
                         <td>{{$theloais->TenKhongDau}}</td>
-                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/theloai/xoa">Xoá</a></td>
+                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/theloai/xoa/{{$theloais->id}}">Xoá</a></td>
                         <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/theloai/sua/{{$theloais->id}}">Sửa</a></td>
                     </tr>
                     @endforeach

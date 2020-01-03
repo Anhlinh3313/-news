@@ -6,8 +6,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Category
-                    <small>List</small>
+                <h1 class="page-header">Tin Tức Thể Thao
+                    <small>Danh Sách</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -15,30 +15,36 @@
                 <thead>
                     <tr align="center">
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Category Parent</th>
-                        <th>Status</th>
+                        <th>Tiêu Đề</th>
+                        <th>Tóm Tắt</th>
+                        <th>Số Lượt Xem</th>
+                        <th>Nổi Bật</th>
                         <th>Delete</th>
                         <th>Edit</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="odd gradeX" align="center">
-                        <td>1</td>
-                        <td>Tin Tức</td>
-                        <td>None</td>
-                        <td>Hiện</td>
-                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="#"> Delete</a></td>
-                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="#">Edit</a></td>
-                    </tr>
-                    <tr class="even gradeC" align="center">
-                        <td>2</td>
-                        <td>Bóng Đá</td>
-                        <td>Thể Thao</td>
-                        <td>Ẩn</td>
-                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="#"> Delete</a></td>
-                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="#">Edit</a></td>
-                    </tr>
+                    @foreach($tintuc as $tintucs)
+                        <tr class="odd gradeX" align="center">
+                            <td>{{$tintucs->id}}</td>
+                            <td>
+                                <p>{{$tintucs->TieuDe}}</p>
+                                <img width="100px" src="upload/tintuc/{{$tintucs->Hinh}}"/>
+                            </td>
+                            <td>{{$tintucs->TomTat}}</td>
+                            <td>{{$tintucs->SoLuotXem}}</td>
+                            <td>
+                                @if($tintucs->NoiBat == 0)
+                                {{'không'}}
+                                @else
+                                {{'có'}}
+                                @endif
+                            </td>
+                            <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/tintuc/xoa/{{$tintucs->id}}">Xoá</a></td>
+                            <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/tintuc/sua/{{$tintucs->id}}">Sửa</a></td>
+                            </tr>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

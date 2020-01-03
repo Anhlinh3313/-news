@@ -6,14 +6,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Thể Loại
+                <h1 class="page-header">Thể Loại Thể Thao
                     <small>thêm</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
             <div class="col-lg-7" style="padding-bottom:120px">
                 @if(count($errors)>0)
-                   <div class="alert-danger">
+                   <div class="alert alert-danger">
                       @foreach($errors->all() as $err)
                       {{$err}}<br>
                       @endforeach
@@ -21,7 +21,7 @@
                 @endif 
 
                 @if(session('thongbao'))
-                    <div class="alert-success">
+                    <div class="alert alert-success">
                         {{session('thongbao')}}
                     </div>
                 @endif
@@ -31,8 +31,8 @@
                         <label>Tên thể loại</label>
                         <input class="form-control" name="Ten" placeholder="nhập tên thể loại"/>
                     </div>
-                    <button type="submit" class="btn btn-default">Category Add</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-default">Thêm Thể Loại Thể Thao</button>
+                    <button type="reset" class="btn btn-default">Làm Mới</button>
                 </form>
             </div>
         </div>

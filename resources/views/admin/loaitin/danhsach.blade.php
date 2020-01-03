@@ -10,6 +10,11 @@
                     <small>Danh sách loại tin</small>
                 </h1>
             </div>
+            @if(session('thongbao'))
+                            <div class="alert alert-success">
+                                {{session('thongbao')}}
+                            </div>
+                        @endif
             <!-- /.col-lg-12 -->
             <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                 <thead>
@@ -27,8 +32,8 @@
                         <td>{{$loaitins->id}}</td>
                         <td>{{$loaitins->Ten}}</td>
                         <td>{{$loaitins->TenKhongDau}}</td>
-                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/loaitin/xoa">Xoá</a></td>
-                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/loaitin/sua">Sửa</a></td>
+                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/loaitin/xoa/{{$loaitins->id}}">Xoá</a></td>
+                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/loaitin/sua/{{$loaitins->id}}">Sửa</a></td>
                     </tr>
                     @endforeach
                 </tbody>
