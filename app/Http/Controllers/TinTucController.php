@@ -92,12 +92,12 @@ class TinTucController extends Controller
     //      $loaitin->save();
 
     //      return redirect('admin/loaitin/sua/'.$id)->with('thongbao','thêm thành công');
-    // }
-    // public function getXoa($id){
-    //     $loaitin = Loaitin::find($id);
-    //     $loaitin->delete(); 
+    }
+    public function getXoa($id){
+        $tintuc = TinTuc::find($id);
+        $tintuc->delete(); 
 
-    //     return redirect('admin/loaitin/danhsach')->with('thongbao','xoá thành công');
+        return redirect('admin/tintuc/danhsach')->with('thongbao','xoá thành công');
     }
 
    
