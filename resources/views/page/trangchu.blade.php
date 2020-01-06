@@ -14,13 +14,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img class="slide-image" src="image/hinh.png" alt="">
+                            <img class="slide-image" src="admin_asset/slidehinh/1.jpg" alt="" width="20px">
                         </div>
                         <div class="item">
-                            <img class="slide-image" src="image/hinh.png" alt="">
+                            <img class="slide-image" src="admin_asset/slidehinh/2.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img class="slide-image" src="image/hinh.png" alt="">
+                            <img class="slide-image" src="admin_asset/slidehinh/3.jpg" alt="">
                         </div>
                     </div>
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -43,244 +43,56 @@
             <div class="col-md-9">
 	            <div class="panel panel-default">            
 	            	<div class="panel-heading" style="background-color:red; color:white;" >
-	            		<h2 style="margin-top:0px; margin-bottom:0px;">Trang Tin Tức</h2>
+	            		<h2 style="margin-top:0px; margin-bottom:0px;">Trang thông tin</h2>
 	            	</div>
 
 	            	<div class="panel-body">
 	            		<!-- item -->
+	            		@foreach($theloai as $theloais)
+	            		@if(count($theloais->loaitin)>0)
 					    <div class="row-item row">
 		                	<h3>
-		                		<a href="category.html">Tin Mới</a> | 	
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
+		                		<a href="category.html">{{$theloais->Ten}}</a> | 
+		                		@foreach($theloais->loaitin as $loaitins)	
+		                		<small><a href="category.html"><i>{{$loaitins->Ten}}</i></a>/</small>
+		                		@endforeach           
 		                	</h3>
+		                	<?php
+		                	$data = $theloais->tintuc->where('NoiBat',1)->sortByDesc('created_at')->take(5);
+		                	$tin1 = $data->shift();
+		                	?>
 		                	<div class="col-md-8 border-right">
 		                		<div class="col-md-5">
 			                        <a href="detail.html">
-			                            <img class="img-responsive" src="image/hinh1.png" alt="">
+			                            <img class="img-responsive" src="upload/tintuc/{{$tin1['Hinh']}}" alt="">
 			                        </a>
 			                    </div>
 
 			                    <div class="col-md-7">
-			                        <h3>tin Nồi bật</h3>
-			                        <p>ba la ba lơ</p>
-			                        <a class="btn btn-primary" href="detail.html">Xem Tin <span class="glyphicon glyphicon-chevron-right"></span></a>
-								</div>
-
-		                	</div>
-		                    
-
-							<div class="col-md-4">
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-							</div>
-							
-							<div class="break"></div>
-		                </div>
-		                <!-- end item -->
-		                <!-- item -->
-					    <div class="row-item row">
-		                	<h3><a href="category.html">Tin Mới</a> | 	
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                	</h3>
-		                	<div class="col-md-8 border-right">
-		                		<div class="col-md-5">
-			                        <a href="detail.html">
-			                            <img class="img-responsive" src="image/hinh1.png" alt="">
-			                        </a>
-			                    </div>
-			                    <div class="col-md-7">
-			                        <h3>tin Nồi bật</h3>
-			                        <p>ba la ba lơ</p>
-			                        <a class="btn btn-primary" href="detail.html">Xem Tin <span class="glyphicon glyphicon-chevron-right"></span></a>
+			                        <h3>{{$tin1['TieuDe']}}</h3>
+			                        <p>{{$tin1['TomTat']}}</p>
+			                        <a class="btn btn-primary" href="detail.html">Xem thêm tin <span class="glyphicon glyphicon-chevron-right"></span></a>
 								</div>
 		                	</div>
 		                    
 
 							<div class="col-md-4">
+								@foreach($data->all() as $tintuc)
 								<a href="detail.html">
 									<h4>
 										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
+										{{$tintuc["TieuDe"]}}
 									</h4>
 								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
+								@endforeach
+								
 							</div>
 							
-
-
 							<div class="break"></div>
 		                </div>
+		                @endif
+		                @endforeach
 		                <!-- end item -->
-		                <!-- item -->
-					    <div class="row-item row">
-		                	<h3><a href="category.html">Tin Mới</a> | 	
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                	</h3>
-		                	<div class="col-md-8 border-right">
-		                		<div class="col-md-5">
-			                        <a href="detail.html">
-			                            <img class="img-responsive" src="image/hinh1.png" alt="">
-			                        </a>
-			                    </div>
-			                    <div class="col-md-7">
-			                        <h3>tin Nồi bật</h3>
-			                        <p>ba la ba lơ</p>
-			                        <a class="btn btn-primary" href="detail.html">Xem Tin <span class="glyphicon glyphicon-chevron-right"></span></a>
-								</div>
-		                	</div>
-		                    
-
-							<div class="col-md-4">
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-							</div>
-							
-
-
-							<div class="break"></div>
-		                </div>
-		                <!-- end item -->
-		                <!-- item -->
-					    <div class="row-item row">
-		                	<h3><a href="category.html">Tin Mới</a> | 	
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                		<small><a href="category.html"><i>tin</i></a>/</small>
-		                	</h3>
-		                	<div class="col-md-8 border-right">
-		                		<div class="col-md-5">
-			                        <a href="detail.html">
-			                            <img class="img-responsive" src="image/hinh1.png" alt="">
-			                        </a>
-			                    </div>
-			                    <div class="col-md-7">
-			                        <h3>tin Nồi bật</h3>
-			                        <p>ba la ba lơ</p>
-			                        <a class="btn btn-primary" href="detail.html">Xem Tin <span class="glyphicon glyphicon-chevron-right"></span></a>
-								</div>
-		                	</div>
-		                    
-
-							<div class="col-md-4">
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-
-								<a href="detail.html">
-									<h4>
-										<span class="glyphicon glyphicon-list-alt"></span>
-										nổi bật nhất
-									</h4>
-								</a>
-							</div>
-							
-
-
-							<div class="break"></div>
-		                </div>
-		                <!-- end item -->
-
 					</div>
 	            </div>
         	</div>

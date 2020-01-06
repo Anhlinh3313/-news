@@ -1,7 +1,7 @@
  <div class="col-md-3 ">
                 <ul class="list-group" id="menu">
                     <li href="#" class="list-group-item menu1 active" style="background-color: red;">
-                    	Menu
+                    	Danh sách danh mục thông tin
                     </li>
                      @foreach($theloai as $theloais)
                      @if(count($theloais->loaitin)>0)

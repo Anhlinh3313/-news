@@ -82,3 +82,5 @@ Route::group(['prefix'=>'admin'],function(){
 });
   Route::get('trangchu','PageController@trangchu');
   Route::get('lienhe','PageController@lienhe');
+  Route::get('loaitin/{id}','PageController@loaitin');
+  Route::get('gioithieu','PageController@gioithieu');

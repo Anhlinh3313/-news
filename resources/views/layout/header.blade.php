@@ -15,7 +15,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Giới Thiệu</a>
+                        <a href="gioithieu">Giới Thiệu</a>
                     </li>
                     <li>
                         <a href="lienhe">Liên Hệ</a>
@@ -24,9 +24,9 @@
 
                 <form class="navbar-form navbar-left" role="search">
 			        <div class="form-group">
-			          <input type="text" class="form-control" placeholder="Search">
+			          <input type="text" class="form-control" placeholder="Tìm kiếm">
 			        </div>
-			        <button type="submit" class="btn btn-default">Submit</button>
+			        <button type="submit" class="btn btn-default">Tìm kiếm</button>
 			    </form>
 
 			    <ul class="nav navbar-nav pull-right">

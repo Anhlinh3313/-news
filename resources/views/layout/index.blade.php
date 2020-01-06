@@ -10,10 +10,10 @@
     <meta name="author" content="">
 
     <title>Trang Thông Tin Thể Thao Việt Nam</title>
-
+    <base href="{{asset('')}}">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
     <link href="css/my.css" rel="stylesheet">
