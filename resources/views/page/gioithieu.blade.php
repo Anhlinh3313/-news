@@ -40,7 +40,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Laravel Tin Tức</a>
+                <a class="navbar-brand" href="#">Trang Thông Tin Thể Thao</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             @include('layout.header')
