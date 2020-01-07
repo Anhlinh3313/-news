@@ -22,17 +22,25 @@ công dụng
 # Các bước cài đặt
 -Bước 1: Tước tiên bạn clone sourcecode về máy của mình https://github.com/Anhlinh3313/-news.git
   <img src="public/huongdan/1.png" />
--Bước 2: Sau khi clone về xong bạn vào thư mục laravel_demo.zip 
--Bước 3: Tiến hành bận Xampp
--Bước 4: Vào trình duyệt mở localhost/phpmyadmin tiên hành nhập database
+
+-Bước 2: Sau khi clone về xong bạn vào thư mục laravel_demo.zip.
+
+-Bước 3: Tiến hành bận Xampp.
+
+-Bước 4: Vào trình duyệt mở localhost/phpmyadmin tiên hành nhập database.
   <img src="public/huongdan/3.png" />
--Bước 5: sau khi nhập xong bạn vào thư mục .env.example thay đổi thông số localhost của bạn và ten database
+
+-Bước 5: sau khi nhập xong bạn vào thư mục .env.example thay đổi thông số localhost của bạn và ten database.
    <img src="public/huongdan/2.png" />
--Bước 6: Nhấn tổ hợp phím shift+chuột phải chọn như hình 
+
+-Bước 6: Nhấn tổ hợp phím shift+chuột phải chọn như hình.
 <img src="public/huongdan/5.png" />
--Bước 7: gõ lệnh php artisan serve để có link hiển thị loading trang http://127.0.0.1:8000
+
+-Bước 7: gõ lệnh php artisan serve để có link hiển thị loading trang http://127.0.0.1:8000.
+
 -Bước 8: Vào google gõ http://127.0.0.1:8000/trangchu khi thao tác với trang giao diện
          gõ http://127.0.0.1:8000/admin/theloai/danhsach khi thao tác với trang admin
+         
 -Bước 9: Các link được hiển thị trong thư mục routes/web.php
 
 
