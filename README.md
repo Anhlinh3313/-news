@@ -40,7 +40,7 @@ công dụng
 
 -Bước 8: Vào google gõ http://127.0.0.1:8000/trangchu khi thao tác với trang giao diện
          gõ http://127.0.0.1:8000/admin/theloai/danhsach khi thao tác với trang admin
-         
+
 -Bước 9: Các link được hiển thị trong thư mục routes/web.php
 
 
@@ -50,13 +50,20 @@ công dụng
 
 # Hướng phát triển cho bài toán
 -Hiển thị phân loại tin, thể loại top những thông tin đứng đầu
+
 -Tạo đanh nhập mật khẩu bằng zalo facebook hoặc một số mạng khác.
+
 -Đăng nhập người dùng xác nhận mật khẩu bằng số điện thoại hoặc gmail
+
 -Tạo sự trao đổi thông tin lẫn nhau dữ nhiều người dùng bằng cách hiển thị các comment của họ 
+
 -phát triển thêm phần layout giao diện người dùng cũng như giao diện admin thêm phần hấp dẫn
+
 -Tích hợp thêm khả năng chia sẽ từ trang thông tin đến các trang mạng xã hội
 
-# Ngôn ngử sử dụng CSS,HTML,PHP,SCRIPT,NET FRAMEWORK LARAVEL
+# Ngôn ngử sử dụng:
+
+ CSS,HTML,PHP,SCRIPT,NET FRAMEWORK LARAVEL
 
 # Tác giả:
 - Lê khả lĩnh.
