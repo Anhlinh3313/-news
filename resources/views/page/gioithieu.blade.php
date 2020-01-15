@@ -98,7 +98,7 @@
 
 	            	<div class="panel-body">
 	            		<!-- item -->
-					   <p>
+					   <p style="font-size: 24px">
 					   	Trang thông tin thể thao, với các thể loại thể thao loại hình thể thao với những thông tin đặc sắc. Các yếu tố chân thật sống động luôn được chúng tôi cập nhật thường xuyên cũng như không ngừng cải tiến để đáp ứng tốt nhất nhu cầu cho khác hàng, những người đam mê thông tin thể thao và luôn muốn chọn cho mình những thông tin mới nhất hot nhất.   	
 					   </p>
 

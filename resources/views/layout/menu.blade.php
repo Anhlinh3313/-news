@@ -11,7 +11,7 @@
                     <ul>
                         @foreach($theloais->loaitin as $loaitins)
                 		<li class="list-group-item">
-                			<a href="#">{{$loaitins->Ten}}</a>
+                			<a href="loaitin">{{$loaitins->Ten}}</a>
                 		</li>
                 		@endforeach
                     </ul>
